@@ -1,4 +1,24 @@
+html, body {
+    margin:0px;
+    height:100%;
+}
+
 html {
     background-image: url('grunge_background.jpg');
+    background-size: cover;
+}
+
+body {
+    display: flex;
+}
+
+.banner {
+    flex: 1;
+}
+
+main {
+    flex: 2.5;
+    height: 100vh;
     background-size: 100%;
+    background-color: white;
 }
