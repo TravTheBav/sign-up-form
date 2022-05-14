@@ -3,6 +3,11 @@ html, body {
     height:100%;
 }
 
+@font-face {
+    font-family: doomFont;
+    src: url(DooM.ttf);
+}
+
 html {
     background-image: url('grunge_background.jpg');
     background-size: cover;
@@ -14,10 +19,29 @@ body {
 
 .banner {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    width: 120px;
+    height: 120px;    
+}
+
+.banner h1 {
+    margin: 0px;
+    padding: 1rem;
+    text-align: center;
+    font-family: doomFont;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: white;
 }
 
 main {
-    flex: 2.5;
+    flex: 2.8;
     height: 100vh;
     background-size: 100%;
     background-color: white;
