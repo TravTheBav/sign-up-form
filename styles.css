@@ -54,7 +54,7 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-main p:nth-child(2) {
+.sign-up-form p:nth-child(2) {
     margin-bottom: 100px;
 }
 
@@ -64,5 +64,23 @@ li {
 
 .sign-up-form {
     box-shadow: 0px 4px 3px rgb(177, 177, 177);
-    padding: 100px 100px 10px 20px;
+    padding: 100px 100px 20px 20px;
+}
+
+.create-account {
+    padding: 40px 20px;
+}
+
+.create-account p {
+    font-size: small;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #596D48;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
 }
