@@ -1,6 +1,6 @@
 html, body {
     margin:0px;
-    height:100%;
+    min-height: 100vh;
 }
 
 @font-face {
@@ -11,13 +11,15 @@ html, body {
 html {
     background-image: url('grunge_background.jpg');
     background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
 }
 
 body {
     display: flex;
 }
 
-.banner {
+.left-side {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -25,27 +27,37 @@ body {
     justify-content: center;
 }
 
+.banner {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 .banner img {
-    width: 120px;
-    height: 120px;    
+    width: 5rem;
+    height: 5rem;
 }
 
 .banner h1 {
-    margin: 0px;
-    padding: 1rem;
+    margin: 0px 0px 0px 4px;
     text-align: center;
     font-family: doomFont;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     color: white;
 }
 
 main {
-    flex: 2.8;
-    height: 100vh;
-    width: 100vw;
-    background-size: 100%;
+    flex: 3;
     background-color: white;  
+}
+
+main > div {
+    padding: 10% 10% 4% 4%;
 }
 
 p {
@@ -55,20 +67,24 @@ p {
 }
 
 .sign-up-form p:nth-child(2) {
-    margin-bottom: 100px;
+    margin-bottom: 10%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
 }
 
 li {
     list-style: none;
 }
 
-.sign-up-form {
-    box-shadow: 0px 4px 3px rgb(177, 177, 177);
-    padding: 100px 100px 20px 20px;
+input {
+    width: min(85%, 140px);
 }
 
-.create-account {
-    padding: 40px 20px;
+.sign-up-form {
+    box-shadow: 0px 4px 3px rgb(177, 177, 177);
 }
 
 .create-account p {
