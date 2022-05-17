@@ -13,6 +13,7 @@ html {
     background-size: cover;
     background-repeat: repeat;
     width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -38,17 +39,17 @@ body {
 }
 
 .banner img {
-    width: 5rem;
-    height: 5rem;
+    width: max(60px, 4vw);
+    height: max(60px, 4vw);
 }
 
 .banner h1 {
     margin: 0px 0px 0px 4px;
     text-align: center;
     font-family: doomFont;
-    font-size: 3rem;
     letter-spacing: 2px;
     color: white;
+    font-size: max(60px, 3vw);
 }
 
 main {
@@ -63,7 +64,6 @@ main > div {
 p {
     font-size: large;
     font-weight: 600;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .sign-up-form p:nth-child(2) {
@@ -77,6 +77,14 @@ ul {
 
 li {
     list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0px 0px 24px 0px; 
+}
+
+label {
+    font-size: .8rem;
+    font-weight: bold;
 }
 
 input {
@@ -99,4 +107,14 @@ button[type="submit"] {
     border: none;
     border-radius: 6px;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+
+    .banner {
+        background-color: rgba(0, 0, 0, 0)
+    }
 }
